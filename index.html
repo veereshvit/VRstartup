@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Good Morning VR</title>
+    <meta name="description" content="Good Morning VR">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+ <a-scene>
+  <a-assets>
+    
+    <img id="boxTexture" src="https://ucarecdn.com/40555169-88b8-4c83-b932-6235c5b1e764/">
+    <img id="skyTexture"
+      src="https://ucarecdn.com/680830df-254b-4d21-a5de-db1ac137f73a/">
+    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+  </a-assets>
+
+  <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+
+  <a-sky src="#skyTexture"></a-sky>
+
+  <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="2" position="2 4 4"></a-light>
+</a-scene>
+  </body>
+</html>
